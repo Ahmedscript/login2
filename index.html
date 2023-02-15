@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:1362px"
+      href="css/phone.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      font-family: "Roboto", sans-serif;
+      outline: none !important;
+    }
+
+    .sec {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background: url("https://media.istockphoto.com/vectors/abstract-purple-vector-background-with-stripes-vector-id972475894?k=20&m=972475894&s=612x612&w=0&h=DIxhhxkq3q37PCSLXJ7EF1MyHVMCEeS4TGySqni4vfE=");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      backdrop-filter: blur(5px);
+      z-index: -1;
+    }
+    .m-container {
+      display: flex;
+      width: 80%;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 7% 0px;
+      /* height: 100%; */
+    }
+    .l-container {
+      display: flex;
+      width: 70%;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      background-image: url("img/signup.jpg");
+      height: 500px;
+      border-radius: 17px 0px 0px 17px;
+    }
+    .l-container h2,
+    p {
+      padding: 0px 0px 0px 120px;
+    }
+    .l-container h2 {
+      font-size: 50px;
+      font-weight: 100;
+      color: white;
+    }
+    .l-container p {
+      color: white;
+      font-size: 15px;
+      font-weight: 50;
+    }
+    .r-container {
+      display: flex;
+      width: 30%;
+      justify-content: center;
+      flex-direction: column;
+      background-color: white;
+      align-items: center;
+      border-radius: 0px 17px 17px 0px;
+    }
+    .r-container input {
+      margin: 5px;
+    }
+    .r-container h3 {
+      text-align: center;
+      color: rgba(0, 0, 0, 0.736);
+      font-weight: 950;
+      font-size: 25px;
+      margin-bottom: 20px;
+      width: 80%;
+    }
+    .ep input {
+      border-radius: 35px;
+      border: 1px solid rgba(0, 0, 0, 0.189);
+      width: 80%;
+      height: 49px;
+      text-align: center;
+      /* margin-left: -50px; */
+      margin: 10px 0px;
+    }
+    .ep ::placeholder {
+      color: rgba(0, 0, 0, 0.356);
+    }
+    .ep {
+      width: 100%;
+      text-align: center;
+    }
+    .ep1 {
+      width: 100%;
+      text-align: center;
+    }
+    .ep1 input {
+      border-radius: 35px;
+      width: 80%;
+      height: 49px;
+      text-align: center;
+      /* margin-left: -50px; */
+      border: 0px;
+    }
+    #grad input {
+      /* background-image: linear-gradient(
+        to right,
+        rgb(166, 3, 248),
+        rgba(174, 0, 255, 0.882),
+        rgba(208, 0, 255, 0.864),
+        rgba(208, 0, 255, 0.741),
+        rgba(208, 0, 255, 0.864),
+        rgba(174, 0, 255, 0.882),
+        rgb(166, 3, 248)
+      ); */
+      background-image: radial-gradient(#2b043b6e, #2b043bbd);
+      box-shadow: 0px 11px 9px -6px #04030457;
+      margin: 20px 0px;
+    }
+
+    .ep1 ::placeholder {
+      color: white;
+      font-size: 15px;
+    }
+    .check {
+      display: flex;
+    }
+    .forgot a {
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.558);
+      text-decoration: none;
+      margin-top: 16px;
+      margin-left: 30px;
+    }
+    .remember {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.558);
+      margin-top: 1px;
+    }
+    .acc a {
+      text-decoration: none;
+    }
+    /* MEDIA QUERY */
+    @media (max-width: 1280px) {
+      .check {
+        flex-wrap: wrap;
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .forgot {
+        width: 100%;
+      }
+      .forgot a {
+        margin-left: 5px;
+      }
+
+      /* @media (max-width: 1024px) {
+        .sec {
+          margin: 0px 0px;
+          overflow-x: hidden;
+        } */
+    }
+    @media (max-width: 992px) {
+      .m-container {
+        margin: 15% 0px;
+      }
+      .l-container h2 {
+        font-size: 25px;
+      }
+      .l-container h2,
+      p {
+        text-align: center;
+        padding: 0px;
+      }
+      .l-container {
+        width: 100%;
+        height: fit-content;
+        padding: 20px 0px;
+        border-radius: 17px 17px 0px 0px;
+      }
+      .r-container {
+        width: 100%;
+        padding: 20px 10px;
+        border-radius: 0px 0px 17px 17px;
+      }
+    }
+    /* @media (min-width: 360px) and (max-width: 740px) {
+      .sec {
+        height: 740.5px;
+      }
+    } */
+  </style>
+  <body>
+    <section class="sec">
+      <div class="m-container">
+        <div class="l-container">
+          <h2>Welcome Back!</h2>
+          <p>You can sign in to access with your existing account.</p>
+        </div>
+        <div class="r-container">
+          <h3>Sign In</h3>
+          <div class="ep">
+            <input type="email" name="Email" placeholder="Username Or Email" />
+          </div>
+          <div class="ep">
+            <input type="password" name="Password" placeholder="Password" />
+          </div>
+          <div class="check">
+            <input
+              type="checkbox"
+              name="Remember Me"
+              id=""
+              placeholder="Remember Me" />
+            <div class="remember">Remember Me</div>
+            <div class="forgot">
+              <a href="/Project1.html">Forgot Password?</a>
+            </div>
+          </div>
+          <div class="ep1" id="grad">
+            <input type="sign in" name-="sign in" placeholder="Sign In" />
+          </div>
+          <div class="acc">
+            New Here?
+            <a href="/2nd Day/2ndDay.html" target="_blank">Create An Account</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
